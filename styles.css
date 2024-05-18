@@ -232,7 +232,7 @@ ul.service-list{
 }
 
 li.service-item {
-    padding: 5px 10px;
+    padding: 30px 10px;
     margin: 5px;
     background: #041862;
     color: #fff;
@@ -343,20 +343,7 @@ footer{
     color: #fff;
 }
 
-/* Mobile Menu */
-ul#mobileMenuBlock {
-    display: block;
-    position: absolute;
-    z-index: 999;
-    background: black;
-    width: 100%;
-    right: 0px;
-    top: 152px;
-}
 
-ul#mobileMenuBlock li.menu-item{
-    text-align: center;
-}
 
 @media screen and (min-width:860px) {
     .mobile-menu-btn{
@@ -373,15 +360,26 @@ ul#mobileMenuBlock li.menu-item{
     .mobile-menu-btn{
         display: block;
     }
+/* Mobile Menu */
+
 
     ul.mobile-menu{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        z-index: 999;
+        background: black;
+        width: 100%;
+        right: 0px;
+        top: 152px;
+    }
+
+    ul#mobileMenuBlock li.menu-item{
+        text-align: center;
     }
     .about-container{
         flex-wrap: wrap;
     }   
+
+
 
     .portfolio-body .portfolio-list{
         grid-template-columns: auto auto;
@@ -392,10 +390,10 @@ ul#mobileMenuBlock li.menu-item{
     }
 }
 
-@media screen and (max-width:500px) and (min-width:768px){
+@media screen and (min-width:500px) and (max-width:769px){
     .about-container .about-left img{
-        width: auto;
-        height: 300px;
+        height: 500px;
+        width: 300px;
     }
 }
 
@@ -403,6 +401,7 @@ ul#mobileMenuBlock li.menu-item{
     ul.service-list{
         grid-template-columns: auto;
     }
+    
 }
 
 
